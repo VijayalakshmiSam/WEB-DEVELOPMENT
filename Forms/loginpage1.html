@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle2.css"/>
+    <title>Log in page</title>
+</head>
+<body>
+    <h1>Welcome to your Account</h1>
+    <br>
+    <h2>Please Log In to continue</h2>
+    <div class="container-login">
+    <form id="login" action="http://wikipedia.org">
+        <h2>Log In</h2>
+        <div>
+        <label class="email" for="email">Email:</label>
+        <input name="email"
+               id="email" 
+               type="email" 
+               placeholder="Your Email" 
+               required>
+        </div>
+        <div>
+        <label class="password" for="pass" >Password:</label>
+        <input 
+        name="password" 
+        id="pass" 
+        type="password" 
+        placeholder="password"
+        minlength="5" maxlength="10"
+        required
+        disabled="disabled"/>
+    </div>
+    </div>
+        <div class="btnlogin">
+        <!--for pass length we can use both-->
+        <input class="btn" type="submit" value="Log In">
+        </div>
+    </form>
+</body>
+</html>

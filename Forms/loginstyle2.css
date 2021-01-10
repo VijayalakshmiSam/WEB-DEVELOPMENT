@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    font-family: Cambria, Cochin, Georgia, Times,
+     'Times New Roman', serif !important;
+     color:black !important;
+     /* !important is first priority this will not overrided by any properties  */
+}
+:root{
+    --primary-color:red;
+    --dark-color: black;
+    --light-color:#743604;
+    --danger-color:#925787;
+    --success-color:#286486;
+    --disabled-color:rgb(62, 189, 31);
+    --shadow:rgba(26, 26, 211, 0.7);
+}
+#login{
+    color:cadetblue;
+    padding: 5px;
+    background-color: coral;
+    width: 280px;
+    margin:0 auto;
+    position: relative;
+    border:2px solid red;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+h1{
+    text-align: center;
+    padding:1 rem;
+    font-family: Georgia, 'Times New Roman', 
+    Times, serif;
+    color:var(--primary-color) !important;
+    /*box-shadow: var(--shadow);*/
+}
+h1:hover{
+    box-shadow: var(--shadow);
+    background-color: blueviolet;
+}
+h2{
+    text-align: center;
+    padding:1 rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:var(--dark-color);
+}
+div{
+    padding: 5px;
+}
+.Login,label{
+    color:var(--dark-color) !important;
+}
+[value="Log In"]{
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size:1rem;
+    font-weight: bold;
+    color:var(--dark-color) !important;
+}
+input[type='submit']{
+    padding:10px auto;
+    background: cornflowerblue;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+.btn:hover{
+    box-shadow:var(--shadow);
+    background-color: chartreuse;
+}
+.btnlogin{
+    display: flex;
+    box-shadow: var(--shadow);
+}
+#email,#password:hover{
+       background-color: var(--dark-color);
+}
+/* focus */
+input:focus{
+    background: var(--light-color);
+    color:var(--success-color) !important;
+}
+
+input:enabled{
+    color: var(--success-color) !important;
+}
