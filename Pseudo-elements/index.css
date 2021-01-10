@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+    height: 100%;
+    margin: 25%;
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+              Geneva, Verdana, sans-serif;
+}
+/* Before and After */
+h1::before {
+    content:'before';
+   /* background: royalblue;
+    width:340px;
+    height: 10px;*/
+    display: block;
+    font-size: 20px; 
+    background: blueviolet;
+    color:chartreuse;
+}
+
+h1::after {
+    content:'after';
+    background: royalblue;
+   /* width:340px;
+    height: 10px;*/
+    display: inline;
+    /* font-size: 16px; 
+    background: blueviolet;*/
+    color:chartreuse;
+}
+h2{
+    height: 100%;
+    margin: 25%;
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+              Geneva, Verdana, sans-serif;
+}
+
+h2::before{
+    /* content:url(//unsplash.it/200/200); */
+    display: inline-block;
+    margin:0 0 8px 20px;
+    height:3px;
+    text-shadow:none;
+    background-color: crimson;
+    width:100%;
+    content:'';
+}
+h2::after{
+    /* content:url(//unsplash.it/100/100); */
+    display: inline-block;
+    margin:0 0 8px 20px;
+    height:3px;
+    text-shadow:none;
+    background-color: crimson;
+    width:100%;
+    content:'';
+}
+p::before{
+    content: open-quote;
+    color:cyan;
+    font-size: 3rem;
+    background: darkolivegreen;
+}
+p::after{
+    content: close-quote;
+    color:cyan;
+    font-size: 3rem;
+    background: darkolivegreen;
+}
+p{
+    height: 100%;
+    margin: 25%;
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+              Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+
